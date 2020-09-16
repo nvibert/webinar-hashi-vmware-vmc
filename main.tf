@@ -31,7 +31,7 @@ resource "vmc_sddc" "sddc_1" {
   # sddc_template_id = ""
   deployment_type = "SingleAZ"
   account_link_sddc_config {
-    customer_subnet_ids  = [data.vmc_customer_subnets.my_subnets.ids[1]]
+    customer_subnet_ids  = [data.vmc_customer_subnets.my_subnets.ids[2]]
     connected_account_id = data.vmc_connected_accounts.my_accounts.id
   }
   timeouts {
